@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="template\opencl.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\opengl.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\sprite.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\surface.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\template.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\tmpl8math.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="template\scene.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>map</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>actors\player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>actors\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="projectile.cpp">
+      <Filter>actors\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="levelAudioManager.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="enemySoundManager.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>actors\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="uiManager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="radioRenderer.cpp">
+      <Filter>rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="inventoryRenderer.cpp">
+      <Filter>rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="generalUIRenderer.cpp">
+      <Filter>rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="collisionManager.cpp">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="pistol.cpp">
+      <Filter>equippable\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="pickupManager.cpp">
+      <Filter>actors\pickupable</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="gameplayScene.cpp">
+      <Filter>scene\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="mainMenuScene.cpp">
+      <Filter>scene\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="winLoseScene.cpp">
+      <Filter>scene\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLoadManager.cpp">
+      <Filter>save load</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSheet.cpp">
+      <Filter>rendering\sheets</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteSheet.cpp">
+      <Filter>rendering\sheets</Filter>
+    </ClCompile>
+    <ClCompile Include="radioManager.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="template\common.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\opencl.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\opengl.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\precomp.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\sprite.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\surface.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="template\tmpl8math.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="cl\tools.cl">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="template\scene.h">
+      <Filter>template</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>map</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>actors\player</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseActor.h">
+      <Filter>actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>actors\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="renderingConst.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="projectile.h">
+      <Filter>actors\projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="levelAudioManager.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="enemySoundManager.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>actors\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="commonTypes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="uiManager.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="radioRenderer.h">
+      <Filter>rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="inventoryRenderer.h">
+      <Filter>rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="generalUIRenderer.h">
+      <Filter>rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="baseEquippable.h">
+      <Filter>equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="pistol.h">
+      <Filter>equippable\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="collisionManager.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="AllEquippableHeader.h">
+      <Filter>equippable</Filter>
+    </ClInclude>
+    <ClInclude Include="basePickupable.h">
+      <Filter>actors\pickupable</Filter>
+    </ClInclude>
+    <ClInclude Include="pickupManager.h">
+      <Filter>actors\pickupable</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="baseScene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="allScenes.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="gameplayScene.h">
+      <Filter>scene\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="mainMenuScene.h">
+      <Filter>scene\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="winLoseScene.h">
+      <Filter>scene\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLoadManager.h">
+      <Filter>save load</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSheet.h">
+      <Filter>rendering\sheets</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteSheet.h">
+      <Filter>rendering\sheets</Filter>
+    </ClInclude>
+    <ClInclude Include="radioManager.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>template</Filter>
+    </None>
+    <None Include="cl\kernels.cl">
+      <Filter>kernels</Filter>
+    </None>
+    <None Include="template\LICENSE">
+      <Filter>template</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="template">
+      <UniqueIdentifier>{c65d8edd-a382-4ee7-9af9-5d04810e2884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernels">
+      <UniqueIdentifier>{96ad1716-f468-46c6-8f16-5accbc19d76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering">
+      <UniqueIdentifier>{7e91a77b-3341-4daa-8f97-cb193f3b2edd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="map">
+      <UniqueIdentifier>{de7f4c75-1912-4338-9dcf-6b04ee1c90e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actors">
+      <UniqueIdentifier>{05611370-9e61-4365-aa83-508ac7f7be7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actors\player">
+      <UniqueIdentifier>{02ec5c8e-a1ca-4cde-88ac-60dc59800730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actors\enemy">
+      <UniqueIdentifier>{c86cc647-deec-4d63-9f2f-10cefff7bfbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actors\projectiles">
+      <UniqueIdentifier>{1a90ba93-778d-4c08-a737-a4d7690ec044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{603c947d-6989-41cf-bd33-4df85b004cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gizmos">
+      <UniqueIdentifier>{ec885db3-edae-4898-b477-33501172758b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{969f001c-3daf-4a5b-8b41-a8d1b90e67ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{c60115ef-a5eb-4b9a-b479-614d1d1f68e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="equippable">
+      <UniqueIdentifier>{565a5411-402b-46d2-b922-0789bd7612e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="equippable\weapons">
+      <UniqueIdentifier>{f9af67aa-2ffa-4cc9-b6fc-c74565900b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="save load">
+      <UniqueIdentifier>{cf527d8d-af60-4592-b835-318a9ba86130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering\UI">
+      <UniqueIdentifier>{19cc5a2b-c9ad-44c5-a251-8ae2b039e97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="collision">
+      <UniqueIdentifier>{eb33931e-c51f-424a-94fe-2e644a34bf01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actors\pickupable">
+      <UniqueIdentifier>{0f25c6ce-64f1-471d-bf17-5ae8b83ab413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{6df9e4f9-40aa-4b5d-9138-78fb56b1214a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\scenes">
+      <UniqueIdentifier>{3ca25b90-4114-4fbf-a264-f230a6a09f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering\sheets">
+      <UniqueIdentifier>{c80f872d-703d-4cff-9639-ed84a95d9d5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
