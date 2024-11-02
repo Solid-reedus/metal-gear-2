@@ -107,8 +107,6 @@ void Enemy::Init(EnemyManager* p_ptrEnemyManger)
 void Enemy::GoIntoAlert()
 {
 	m_enemyState = EnemyState::alert;
-
-	//currentroom.x + currentroom.y * 3
 	
 	int2 pos = { static_cast<int>(m_camPos->x) / ROOM_SIZE_IN_PIXELS, static_cast<int>(m_camPos->y) / ROOM_SIZE_IN_PIXELS };
 	int enemyRoomIndex = pos.x + pos.y * m_mapRoomSize.x;
@@ -116,12 +114,9 @@ void Enemy::GoIntoAlert()
 	NavNode* closestNode = m_ptrEnemyManger->GetClosestNavNodeWithCol({ static_cast<int>(m_pos.x / TILE_SIZE), static_cast<int>(m_pos.y / TILE_SIZE) }, enemyRoomIndex);;
 	const float2& playerPosfloat = m_ptrEnemyManger->GetPlayerPos();
 	NavNode* playerPos = m_ptrEnemyManger->GetClosestNavNodeWithCol({ static_cast<int>(playerPosfloat.x), static_cast<int>(playerPosfloat.y) }, playerRoomIndex);
-	// something with the pathindex might go wrong
-
 
 	if (m_alertPath != nullptr) {delete m_alertPath;}
 
-	// !!! needs rework if the enemies are far away from a node they might spaz out
 	m_alertPath = m_ptrEnemyManger->GetPath(closestNode, playerPos);
 	m_lastSeenPlayer = normalize(m_ptrEnemyManger->GetPlayerPos() - (m_pos / TILE_SIZE));
 
@@ -147,7 +142,6 @@ void Enemy::StayInAlert()
 	
 		if (m_alertPath != nullptr) { delete m_alertPath; }
 	
-		// !!! needs rework if the enemies are far away from a node they might spaz out
 		m_alertPath = m_ptrEnemyManger->GetPath(closestNode, playerPos);
 	
 		m_alertPathIndex = 0;
@@ -433,7 +427,6 @@ void Enemy::Update(float p_deltaTime)
 			if (m_NextNode == nullptr) { return; }
 
 			Instruction currentInstruction = m_ptrArrayPatrolRoute->instructions[m_patrolIndex];
-			//float2 dir = { 0,0 };
 
 			switch (currentInstruction.enemyInstruction)
 			{
